@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movie Ticket Selector</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Movie Tickets Selector</h1>
+
+      <p>Please select the movie title, your age, showtime to see tickets price.</p>
+
+      <form id="selector">
+        <h2>Please select the movie</h2>
+        <select id="movie">
+          <option value="movie1">Movie1</option>
+          <option value="movie2">Movie2</option>
+          <option value="movie3">Movie3</option>
+        </select>
+        <h2>How old are you?</h2>
+        <select id="age">
+          <option value="youth">youth</option>
+          <option value="general">general admission</option>
+          <option value="senior">senior</option>
+        </select>
+        <h2>Please select the showtime</h2>
+        <select id="showtime">
+          <option value="matinee">Matinee</option>
+          <option value="daytime">Daytime</option>
+          <option value="evening">Evening</option>
+        </select>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-default">See your ticket price</button>
+    </form>
+
+
+      <div id="result">
+        <p>Your ticket price is <span id="price"></span>! Enjoy the movie!</p>
+      </div>
+    </div>
+  </body>
+</html>
